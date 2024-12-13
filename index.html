@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemedicine Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Early Cancer Detection Telemedicine</h1>
+    </header>
+    <main>
+        <section id="registration">
+            <h2>Registration Form</h2>
+            <form id="regForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+        <section id="login">
+            <h2>Sign In</h2>
+            <form id="loginForm">
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" name="loginUsername" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="symptoms">
+            <h2>Enter Symptoms</h2>
+            <form id="symptomForm">
+                <label for="symptomDescription">Describe your symptoms:</label>
+                <textarea id="symptomDescription" name="symptomDescription" required></textarea>
+                <button type="submit">Submit Symptoms</button>
+            </form>
+        </section>
+        <section id="videoConsultation">
+            <h2>Video Consultation</h2>
+            <button id="startVideo">Start Video Consultation</button>
+        </section>
+        <section id="payment">
+            <h2>Payment Options</h2>
+            <form id="paymentForm">
+                <label for="paymentMethod">Choose Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod">
+                    <option value="mobileMoney">Mobile Money</option>
+                    <option value="cash">Cash</option>
+                    <option value="cheque">Cheque</option>
+                    <option value="visa">Visa Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="mpesa">mpesa</option>
+                </select>
+                <button type="submit">Pay</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Telemedicine Application</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
